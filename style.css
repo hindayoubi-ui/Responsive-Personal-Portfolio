@@ -1,0 +1,32 @@
+body {
+   
+   padding: 70px;
+}
+
+.navbar .nav-link{
+    color: black;
+    transition: 0.3em;
+
+}
+.navbar .nav-link:hover{
+    color: white;
+
+}
+.navbar .nav-link.active{
+    color:black;
+}
+.navbar .nav-link:hover{
+    color: white;
+}
+/* hydi krml fekret responsive */
+.hero-section{
+     min-height: 100vh; 
+
+   
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}

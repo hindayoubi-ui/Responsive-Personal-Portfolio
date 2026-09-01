@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+<link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <div class="container">
+    <a class="navbar-brand text-dark text-dark " href="index.html">My Portfolio </a>
+    <!-- toggler يلي بس اعمل انسبكت بتبين 3 شحطات -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!--  -->
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 ">
+        <li class="nav-item">
+            <!-- active الصفحة يلي انا فيها -->
+          <a class="nav-link border-end active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link border-end " href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-end " href="edu.html">Education</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link border-end" href="skills.html">Skills</a>
+        </li>  
+        
+        <li class="nav-item">
+          <a class="nav-link border-end active" href="cv.html">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section class="skills py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-7">
+   
+                <h2 class="fw-bold text-dark mt-1">Curriculum Vitae</h2>
+                <p > Learn more about my education, skills, and experience.
+</p>
+    <a href="CV-Hind Al Ayoubi.pdf" download class="btn btn-primary">
+    <i class="bi bi-download"></i>
+    Download CV
+</a>
+
+</section>
+<!-- Footer idea 1 -->
+      <!-- <footer class="bg-secondary text-white py-4 mt-auto"> -->
+    <div class="container-text-center ">
+      <!-- mb-0 for removing extra space -->
+      
+        <p class="text-white mb-0">
+            &copy; 2026 Hind Portfolio. All rights reserved.
+        </p>
+         <p class="text-white mb-0">
+            <i class="bi bi-calendar"></i>
+            August 30, 2026
+            &nbsp; | &nbsp;
+            <i class="bi bi-clock"></i>
+            10:30 AM
+        </p>
+    </div>
+<!-- </footer> -->
+ <!-- Footer -->
+<footer class="bg-secondary text-dark fixed-bottom w-100">
+    <div class="container-fluid text-center py-3">
+       <!-- Copyright -->
+      <p class="text-dark mb-0">
+            &copy; 2026 Hind Portfolio. All rights reserved.
+        </p>
+        
+         <i class="bi bi-calendar3"></i>
+        <span id="date"></span>
+
+        <span class="mx-2">|</span>
+
+        <i class="bi bi-clock"></i>
+        <span id="time"></span>
+        
+    </div>
+</footer>
+<!-- JavaScript <script> → بيجيب الوقت الحالي وبيحدّثه كل ثانية. krml hek hatet script -->
+<script>
+    function updateDateTime() {
+        const now = new Date();
+
+        document.getElementById("date").textContent =
+            now.toLocaleDateString();
+       
+        document.getElementById("time").textContent =
+            now.toLocaleTimeString();
+       
+        // toLocaleString() بتعطي التاريخ + الوقت مع بعض.
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
