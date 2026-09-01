@@ -77,40 +77,6 @@
     </div>
 <!-- </footer> -->
  <!-- Footer -->
-<footer class="bg-secondary text-dark fixed-bottom w-100">
-    <div class="container-fluid text-center py-3">
-       <!-- Copyright -->
-      <p class="text-dark mb-0">
-            &copy; 2026 Hind Portfolio. All rights reserved.
-        </p>
-        
-         <i class="bi bi-calendar3"></i>
-        <span id="date"></span>
-
-        <span class="mx-2">|</span>
-
-        <i class="bi bi-clock"></i>
-        <span id="time"></span>
-        
-    </div>
-</footer>
-<!-- JavaScript <script> → بيجيب الوقت الحالي وبيحدّثه كل ثانية. krml hek hatet script -->
-<script>
-    function updateDateTime() {
-        const now = new Date();
-
-        document.getElementById("date").textContent =
-            now.toLocaleDateString();
-       
-        document.getElementById("time").textContent =
-            now.toLocaleTimeString();
-       
-        // toLocaleString() بتعطي التاريخ + الوقت مع بعض.
-    }
-
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-</script>
 
 </body>
 </html>
